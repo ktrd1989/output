@@ -1,0 +1,6 @@
+export PATH="/usr/local/opt/postgresql@12.1/bin:$PATH"
+
+export PATH=$PATH:/Users/ktrd0421/Applications/bin
+
+
+# export PATH="/usr/local/opt/@postgresql@12.1/bin:$PATH"

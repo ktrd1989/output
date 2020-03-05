@@ -10,5 +10,9 @@ Rails.application.routes.draw do
     get "login", :to => "users/sessions#new"
     get "logout", :to => "users/sessions#destroy"
   end
+  root "reports#index"
+  
+  resources :reports do
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

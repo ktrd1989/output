@@ -1,0 +1,22 @@
+%h1 Post
+= form_with scope: :report,url: reports_path, local: true do |form|
+  %p
+    = form.label :title
+    %br/
+    = form.text_field :title
+  -# %p
+  -#   = form.label :category
+  -#   %br/
+  -#   = form.text_field :string
+
+
+  %p
+    = form.label :image
+    %br/
+    = form.text_field :image
+  %p
+    = form.label :review
+    %br/
+    = form.text_area :text
+  %p
+    = form.submit

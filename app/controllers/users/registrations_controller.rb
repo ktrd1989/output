@@ -60,6 +60,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
     "/user/#{current_user.id}"
   end
 
+  private
+    def user_params
+      params.require(:user).permit(:name,:image)
+    end
+
   # The path used after sign up for inactive accounts.
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
